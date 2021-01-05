@@ -6,7 +6,9 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { FontAwesome } from '@expo/vector-icons';
 
 import {
-    WelcomeView
+    WelcomeView,
+    LandingScreen,
+    LoginScreen
 } from "./../Screens/index"
 
 
@@ -27,6 +29,8 @@ function MyStack() {
                   initialRouteName="WelcomeView"
             >
                 <Stack.Screen  name="WelcomeView" component={WelcomeView}/>
+                <Stack.Screen  name="LandingScreen" component={LandingScreen}/>
+                <Stack.Screen  name="LoginScreen" component={LoginScreen}/>
             </Stack.Navigator>
             </NavigationContainer>
     )

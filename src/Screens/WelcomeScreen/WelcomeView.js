@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {useEffect }from 'react';
 import { View, Text, StyleSheet , Dimensions,} from 'react-native';
 import { SafeAreaView } from 'react-navigation'
 
 const { width, height } = Dimensions.get("window");
 
 
-const WelcomeView = () => {
+const WelcomeView = ({navigation}) => {
+
+
+useEffect(() => {
+    setTimeout(() => {
+        navigation.navigate("LandingScreen");
+      }, 2000);
+}, [navigation])
 
     return (
       
