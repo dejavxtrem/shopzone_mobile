@@ -30,7 +30,7 @@ const LandingScreen = () => {
             <Button
             title= "Sign-In"
             buttonStyle={styles.buttonStyle}
-            titleStyle={{fontSize: 30, fontFamily: 'NunitoSans_Regular'}}
+            titleStyle={{fontSize: 25, fontFamily: 'NunitoSans_Regular'}}
             onPress={ () => navigation.navigate("LoginScreen")}
             />
             </View>
@@ -39,7 +39,8 @@ const LandingScreen = () => {
              <Button
             title= " Sign-Up"
             buttonStyle={styles.buttonStyle}
-            titleStyle={{fontSize: 30, fontFamily: 'NunitoSans_Regular'}}
+            titleStyle={{fontSize: 25, fontFamily: 'NunitoSans_Regular'}}
+            onPress={ () => navigation.navigate("SignUp")}
              />
             </View>
 
@@ -88,7 +89,7 @@ const styles = StyleSheet.create({
 
 },
 buttonStyle: {
-    height: 65,
+    height: 50,
     width: 300,
     borderRadius: 25
     

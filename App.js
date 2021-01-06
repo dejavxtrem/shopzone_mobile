@@ -13,7 +13,9 @@ import AppLoading from 'expo-app-loading'
  
 const FetchFont = () => {
   return Font.loadAsync({
-    NunitoSans_Regular: require("./src/Fonts/NunitoSans-Regular.ttf")
+    NunitoSans_Regular: require("./src/Fonts/NunitoSans-Regular.ttf"),
+    NunitoSans_Bold: require("./src/Fonts/NunitoSans-Bold.ttf")
+
   })
 }
 export default function App() {

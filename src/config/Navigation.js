@@ -8,7 +8,8 @@ import { FontAwesome } from '@expo/vector-icons';
 import {
     WelcomeView,
     LandingScreen,
-    LoginScreen
+    LoginScreen,
+    SignUp
 } from "./../Screens/index"
 
 
@@ -31,6 +32,7 @@ function MyStack() {
                 <Stack.Screen  name="WelcomeView" component={WelcomeView}/>
                 <Stack.Screen  name="LandingScreen" component={LandingScreen}/>
                 <Stack.Screen  name="LoginScreen" component={LoginScreen}/>
+                <Stack.Screen  name="SignUp" component={SignUp}/>
             </Stack.Navigator>
             </NavigationContainer>
     )
