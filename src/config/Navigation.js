@@ -9,7 +9,8 @@ import {
     WelcomeView,
     LandingScreen,
     LoginScreen,
-    SignUp
+    SignUp,
+    HomeScreen
 } from "./../Screens/index"
 
 
@@ -33,6 +34,7 @@ function MyStack() {
                 <Stack.Screen  name="LandingScreen" component={LandingScreen}/>
                 <Stack.Screen  name="LoginScreen" component={LoginScreen}/>
                 <Stack.Screen  name="SignUp" component={SignUp}/>
+                <Stack.Screen  name="HomeScreen" component={HomeScreen}/>
             </Stack.Navigator>
             </NavigationContainer>
     )

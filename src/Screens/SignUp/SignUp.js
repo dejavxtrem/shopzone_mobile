@@ -1,3 +1,4 @@
+import { StatusBar } from "expo-status-bar"; 
 import React, {useState} from 'react'
 import { View, StyleSheet } from 'react-native'
 import { Text, Input, Button } from 'react-native-elements';
@@ -7,13 +8,18 @@ import { useNavigation } from '@react-navigation/native';
 
 const SignUp = () => {
 
+
+const navigation = useNavigation()
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
 
     return (
+        
         <View style={styles.container}>
+            <StatusBar style="black" />
           <Text 
            h3Style={styles.h3Container}
            h3> 
@@ -72,7 +78,7 @@ const SignUp = () => {
         <Button title ="Sign-Up"
          buttonStyle={styles.buttonStyle}
          titleStyle={{fontSize: 25, fontFamily:'NunitoSans_Bold' }}
-        //onPress={ () => onSubmit({email,password})}
+        onPress={ () => navigation.navigate("HomeScreen") }
         />        
             
           
