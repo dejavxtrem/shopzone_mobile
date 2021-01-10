@@ -64,7 +64,8 @@ const styles = StyleSheet.create({
     h3Container: {
         marginBottom: 100,
         fontSize: 40,
-        fontFamily:'NunitoSans_Bold'
+        fontFamily:'NunitoSans_Bold',
+       
     },
     buttonStyle: {
         height: 50,
@@ -72,7 +73,10 @@ const styles = StyleSheet.create({
         marginTop: 30,
         fontFamily: 'NunitoSans_Regular',
         fontSize: 40,
-        borderRadius: 25
+        fontFamily: 'NunitoSans_Regular',
+         borderRadius: 20,
+        backgroundColor: '#070707',
+        borderColor: '#010101'
     }
 })
 

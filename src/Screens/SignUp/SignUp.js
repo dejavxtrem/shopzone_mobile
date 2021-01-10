@@ -42,7 +42,7 @@ const navigation = useNavigation()
         onChangeText={newEmail => setEmail(newEmail)}
         autoCapitalize="none"
         autoCorrect={false}
-        secureTextEntry
+       
         leftIcon={<MaterialIcons name="email" size={30} color="black" />}
         placeholder="Email"
         inputStyle={{marginLeft: 5}}
@@ -78,7 +78,7 @@ const navigation = useNavigation()
         <Button title ="Sign-Up"
          buttonStyle={styles.buttonStyle}
          titleStyle={{fontSize: 25, fontFamily:'NunitoSans_Bold' }}
-        onPress={ () => navigation.navigate("HomeScreen") }
+        onPress={ () => navigation.navigate("user") }
         />        
             
           
@@ -107,9 +107,12 @@ const styles = StyleSheet.create({
         height: 50,
         width: 300,
         marginTop: 30,
-        fontFamily: 'NunitoSans_Regular',
         fontSize: 40,
-        borderRadius: 25
+        borderRadius: 25,
+        fontSize: 40,
+         borderRadius: 20,
+        backgroundColor: '#070707',
+        borderColor: '#010101'
     }
 })
 

@@ -59,7 +59,8 @@ const styles = StyleSheet.create({
          justifyContent: 'center',
          alignItems: 'center',
          height: windowHeight,
-         marginBottom: 100
+         
+         backgroundColor: '#d1d1d1'
      },
      headerText : {
           marginBottom: 50,
@@ -70,7 +71,10 @@ const styles = StyleSheet.create({
      },
      headerWriting: {
          padding: 10,
-         fontSize: 20
+         fontSize: 20,
+         
+         fontFamily: 'NunitoSans_Regular',
+
      },
      headerSubject: {
             fontSize: 30,
@@ -91,7 +95,12 @@ const styles = StyleSheet.create({
 buttonStyle: {
     height: 50,
     width: 300,
-    borderRadius: 25
+    borderRadius: 25,
+    fontFamily: 'NunitoSans_Regular',
+    fontSize: 40,
+     borderRadius: 20,
+    backgroundColor: '#070707',
+    borderColor: '#010101'
     
 
 }

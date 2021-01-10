@@ -11,13 +11,13 @@ const WelcomeView = ({navigation}) => {
 useEffect(() => {
     setTimeout(() => {
         navigation.navigate("LandingScreen");
-      }, 2000);
+      }, 9000);
 }, [navigation])
 
     return (
       
            <View style={styles.viewContainer}>
-           <Text  style={styles.text}>Welcome Screen</Text>
+           <Text  style={styles.text}>SHOPZONE</Text>
            
            </View>
            
@@ -30,11 +30,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: '#d1d1d1'
     },
     text : {
         fontSize: 30,
-        fontFamily: 'NunitoSans_Regular',
-        marginTop: 10
+        fontFamily: 'NunitoSans_Bold',
+        marginTop: 10,
+        color: '#121212'
         
         
     }
